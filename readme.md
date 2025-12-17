@@ -15,7 +15,7 @@ A professional, "Cyber-Dark" themed portfolio showcasing my work in Python devel
 - **LCG^2:** Research into Linear Congruential Generators in cryptography.
 - **CTF Archive:** Writeups and challenges authored for Backdoor CTF 2025.
 
-## 🤝 Beyond the Code
+## 🤝 Beyond the Books
 - Active member of **InfosecIITR**
 - Competitive Table Tennis player
 - Amateur Poet (exploring the rhythm of language)
