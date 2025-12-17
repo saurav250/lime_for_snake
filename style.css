@@ -1,0 +1,81 @@
+/* This targets the whole body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffcee190;
+    color: #0f0f0f;
+    margin: 0;
+    padding: 20px;
+}
+header{
+    background: /* idk what color to choose for this lol for now I am choosing white*/ white
+}
+h2 {
+    background: rgba(255, 179, 189, 0.545);
+    border-left: 5px solid rgb(253, 127, 144);
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+/* This targets your project cards */
+/* I want to reduce space between h2 and its content card and increase spacing between the next section then */
+section{
+    margin-bottom: 50px;
+}
+.card-container {
+    display:block ;
+    background: rgba(255, 179, 223, 0.545);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #db3493;
+    border-radius: 5px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: white;
+    
+    /* Sticky Magic */
+    position: sticky;
+    top: 0;          /* Stay at the very top */
+    z-index: 1000;   /* Stay on top of all other elements */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Adds a nice shadow when scrolling */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;                 /* Keeps the links horizontal */
+    gap: 20px;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #db3493;
+}
+/* Combine all states to force your theme color */
+.nav-links a, 
+.nav-links a:link, 
+.nav-links a:visited {
+    color: #db3493; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change only on hover */
+.nav-links a:hover {
+    color: #0f0f0f;
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo img {
+    height: 200px;
+    width: 200px;       /* Width and Height must match for a perfect circle */
+    border-radius: 50%; /* This creates the circle */
+    object-fit: cover; /* This prevents the image from stretching */
+    border: 2px solid #db3493; /* Optional: adds a pink ring around the circle */
+}
