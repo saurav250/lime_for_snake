@@ -145,3 +145,51 @@ section {
 html {
     scroll-behavior: smooth;
 }
+@media (max-width: 768px) {
+
+    /* 1. Fix the Navbar & Huge Gap */
+    .navbar {
+        flex-direction: column; /* Stack Logo on top of Links */
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;        /* Reduce the huge 50px gap to 20px */
+        flex-wrap: wrap;  /* Allow links to drop to next line if needed */
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* 2. Shrink the Giant Logo */
+    .logo img {
+        height: 80px; /* 150px takes up half the phone screen, shrink it */
+        width: 80px;
+    }
+
+    /* 3. Fix the Card Layout */
+    .card-container {
+        flex-direction: column; /* Force cards to stack vertically */
+        padding: 10px; /* Reduce padding to give more room for content */
+        gap: 20px;
+    }
+
+    /* 4. Ensure Cards Fit the Screen */
+    .content-card {
+        width: 100%;    /* Force card to fill the phone width */
+        min-width: 0;   /* Allow it to shrink if the screen is tiny */
+        margin-bottom: 10px;
+    }
+
+    /* 5. Tame the Headings */
+    h2 {
+        font-size: 1.5rem; /* Make the red headers smaller */
+        letter-spacing: 1px;
+    }
+
+    /* 6. Adjust Global Padding */
+    body {
+        padding: 10px; /* Use less edge padding on mobile */
+    }
+}
